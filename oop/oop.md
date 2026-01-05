@@ -7,7 +7,7 @@ It majorly consists of two things:
 - ***Class:** A class is a blueprint or template that defines the properties (attributes) and behaviors (methods) common to all objects of its type.*
 - ***Object:** An object is an instance of a class, representing a specific entity with its own unique state (attribute values) and behavior.*
 
-![OOP](low-level-design\images\OOP.png)
+![OOP](../images/OOP.png)
 
 ---
 
@@ -42,15 +42,15 @@ There are four major factors that make OOP significantly used in the real world.
 
 - ***Modularity:** The process of breaking down a complex problem into smaller, manageable, and reusable components (such as classes), enhancing code organization and maintainability.Example: a banking application with separate classes for **Account**, **Customer**, **Transaction**, etc.*
 
-![image.png](attachment:123de872-5746-494e-8c6e-7b833b0ea49d:image.png)
+![Modularity](../images/banking_application.png)
 
 - ***Code Reusability:** Refers to the ability to extend and reuse existing functionality, reducing the need to duplicate code and promoting maintainability.Example: **Vehicle** class extended by **Car** and **Bike**.*
 
-![image.png](attachment:aac25927-5fc3-454b-b0da-cd7a5e029b46:image.png)
+![Code Reusability](../images/vehicle_class.png)
 
 - ***Scalability:** Refers to the ability to effortlessly add new features or functionality without modifying existing code, ensuring the system can grow and adapt without disruption.*
 
-![image.png](attachment:e7043ea3-ec64-4081-996a-8dc7fe2566a7:image.png)
+![Scalability](../images/vehicle_class_01.png)
 
 - ***Security:** Using OOP, users can protect sensitive data by encapsulating it within objects and exposing only the necessary functionality through controlled access methods, ensuring data integrity and security.Example: private balance in a **Bank Account** class.*
 
