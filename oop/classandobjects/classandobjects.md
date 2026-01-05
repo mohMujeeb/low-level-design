@@ -4,34 +4,6 @@ In object-oriented programming, a **Class** is a **blueprint** or **template** f
 
 For example, Consider the following code snippet representing an **Account** class:
 
-**Java**
-
-```java
-class Account {
-    private double balance; // private attribute to store balance
-    
-    public String accountNumber; // public attribute for account number
-
-    // Method to deposit money
-    public void deposit(double amount) {
-        balance += amount;
-    }
-
-    // Method to withdraw money
-    public void withdraw(double amount) {
-        if(balance >= amount) {
-            balance -= amount;
-        }
-    }
-
-    // Method to get balance
-    public double getBalance() {
-        return balance;
-    }
-}
-
-```
-
 **Python**
 
 ```python
@@ -54,7 +26,7 @@ class Account:
         return self.__balance
 ```
 
-![image.png](attachment:d7e9a3a8-475f-459e-ae5d-1a85e696bc4e:image.png)
+![Class and Objects](/images/classandobjects.png)
 
 ### **Keypoints:**
 
@@ -66,27 +38,6 @@ class Account:
 An **object** is an instance of a class. When an object is created from a class, memory is allocated for it, and it holds the data as specified by the class. An object interacts with other parts of the program, and methods can be called and attributes accessed that belong to it.
 
 For example, Consider the following code snippet demonstrating the creation of objects from the **Account** class:
-
-**Jave**
-
-```java
-public static void main(String[] args) {
-
-    // Creating an object of Account class
-    Account acc1 = new Account();
-    acc1.accountNumber = "ACC123";
-    acc1.deposit(5000); // Deposit 5000
-
-    // Creating another object of Account class
-    Account acc2 = new Account();
-    acc2.accountNumber = "ACC456";
-    acc2.deposit(8000); // Deposit 8000
-
-    // Accessing attributes
-    System.out.println("Balance of " + acc1.accountNumber + " is " + acc1.getBalance());
-    System.out.println("Balance of " + acc2.accountNumber + " is " + acc2.getBalance());
-}
-```
 
 **Python** 
 
@@ -128,13 +79,9 @@ For example, In the **Account** class, there are three behaviours/methods: *depo
 
 ---
 
-![image.png](attachment:7f918e93-54c7-4ad7-9c61-5b068fe7f2a7:image.png)
+![Attributes and Behaviours](/images/classandobjects_01.png)
 
 ---
-
-## **Creation of an object**
-
-In order to create an object of the **Employee** class in Java, the following statement was used:
 
 ## **Creation of an object**
 
@@ -148,17 +95,7 @@ Employee obj1 = new Employee();
 obj1 = Employee()
 ```
 
-### **Key Points (Java):**
-
-- ***Creating a new object:***
-    - *The keyword **new** is used to create a new instance of the **Employee** class. This is where the object is allocated in memory, and the constructor of the Employee class is invoked (if defined, otherwise the default constructor is used).*
-    - *This object is created in the heap memory, which is used for dynamically allocated memory in Java.*
-- ***Assigning the reference to the variable:***
-    - ***obj1** is a reference variable of type **Employee**. When we write:`obj1 = new Employee();`we are assigning a reference to the newly created object in the heap to the obj1 variable.*
-    - *This reference is stored in stack memory because local variables (such as obj1) are stored in the stack.*
-    - *The reference is essentially a memory address pointing to the location where the actual object (the instance of Employee) resides in the heap.*
-
-### **Key Points (Python Version):**
+### **Key Points:**
 
 - ***Creating a new object:***
     - In Python, an object is created by calling the class like a function, for example:
@@ -180,13 +117,7 @@ obj1 = Employee()
 
 ---
 
-## **Deletion of an object (Java)**
-
-In Java, objects are deleted automatically by the Garbage Collector (GC). Java handles memory management and deallocates objects that are no longer in use or referenced, thereby helping to avoid memory leaks.
-
-An object becomes eligible for deletion when no active variable or reference are pointing to it. The garbage collector periodically scans the heap memory to identify and collect objects that are no longer being used.
-
-## **Deletion of an Object (Python Version)**
+## **Deletion of an Object**
 
 In Python, objects are also deleted automatically by the **Garbage Collector (GC)**. Python uses automatic memory management, meaning programmers do not manually delete objects. Instead, Python removes objects from memory when any variable **no longer references** them.
 
