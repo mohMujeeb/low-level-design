@@ -7,7 +7,7 @@ It majorly consists of two things:
 - ***Class:** A class is a blueprint or template that defines the properties (attributes) and behaviors (methods) common to all objects of its type.*
 - ***Object:** An object is an instance of a class, representing a specific entity with its own unique state (attribute values) and behavior.*
 
-D:\low-level-design\images\OOP.png
+![OOP](images/OOP.png)
 
 ---
 
